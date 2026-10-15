@@ -1,0 +1,19 @@
+RISE 26.3 - client autonome Fabric (Minecraft 26.3, Java 25)
+Menu : Shift droit (modifiable dans Options > Controles > Rise).
+
+IMPORTANT : Minecraft 26.x n'est plus obfusque (noms Mojang). Ce projet est ecrit d'apres la doc Fabric 26.2
+et n'a pas pu etre compile ici : les premieres compilations peuvent afficher des erreurs a corriger.
+Les appels les plus fragiles sont regroupes dans src/main/java/fr/rise/Compat.java.
+
+COMBAT     KillAura, Crystal Aura, Surround, Auto Totem, Auto Armor, Auto Eat, Panic Guard
+MOUVEMENT  Flight, Speed, Step, Spider, No Fall, Sprint auto, Auto Walk
+VISUEL     ESP Stockage, Xray (minerais), Entity ESP, Fullbright, HUD Infos  (boites translucides a travers les murs)
+MONDE      Nuker, Scaffold, Auto Tool, Chest Stealer, Auto Fish
+BOTS       Farm Bot, Diamond Miner*, Builder Bot*, Market Bot, Auto Sell     (* = Baritone requis)
+UTILE      Anti AFK, Alerte joueurs
+
+COMPILER SANS RIEN INSTALLER (GitHub Actions)
+  1. Supprimez l'ancien depot (Settings > Delete this repository) ou videz-le, puis creez un nouveau depot public.
+  2. Glissez TOUT le contenu de ce dossier (dossier .github inclus) a la RACINE du depot.
+  3. Onglet Actions > build > en cas de croix rouge, copiez les lignes d'erreur.
+  4. Si coche verte : artefact "rise" -> rise-1.0.0.jar -> .minecraft/mods (avec Fabric Loader 0.19.x + Fabric API 26.3).

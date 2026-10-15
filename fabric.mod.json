@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "rise",
+  "version": "${version}",
+  "name": "Rise",
+  "description": "Rise - client utilitaire pour serveurs anarchy (Fabric 26.3).",
+  "authors": ["Moi"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["fr.rise.RiseClient"] },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
